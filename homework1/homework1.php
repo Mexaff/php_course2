@@ -37,6 +37,5 @@ $task5->editUser('13214',
         'salary' => '15000',
         'taxes' => '3750',
     ]);
-var_dump($task5->users['13214']);
 echo '<br>';
 $task5->taxes();
