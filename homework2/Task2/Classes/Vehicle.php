@@ -16,6 +16,7 @@ class Vehicle implements Catepillar, Doors, Fire, Motor, Speed, Wheels
     protected $motorType;
     protected $catePillar;
     protected $wheelsCount;
+    protected $fire;
 
     public function accelerate($speed)
     {
@@ -38,6 +39,9 @@ class Vehicle implements Catepillar, Doors, Fire, Motor, Speed, Wheels
 
     public function getDoorsCount()
     {
+        if(is_null($this->doorsCount)) {
+            return 'This vehicle haven`t door`s';
+        }
         return $this->doorsCount;
     }
 
@@ -49,16 +53,25 @@ class Vehicle implements Catepillar, Doors, Fire, Motor, Speed, Wheels
 
     public function getWheelCount()
     {
+        if(is_null($this->wheelsCount)) {
+            return 'This vehicle haven`t wheels';
+        }
         return $this->wheelsCount;
     }
 
     public function fire()
     {
+        if(is_null($this->fire)) {
+            return false;
+        }
         return 'FIRE! FIRE!<br>';
     }
 
     public function getCatepillar()
     {
+        if(is_null($this->catePillar)) {
+            return 'This vehicle haven`t catepillar';
+        }
         return $this->catePillar;
     }
 
