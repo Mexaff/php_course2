@@ -9,7 +9,7 @@ use Homework2\Task2\Interfaces\Motor;
 use Homework2\Task2\Interfaces\Speed;
 use Homework2\Task2\Interfaces\Wheels;
 
-class Vehicle
+class Vehicle implements Catepillar, Doors, Fire, Motor, Speed, Wheels
 {
     protected $doorsCount;
     protected $speed;
@@ -55,6 +55,11 @@ class Vehicle
     public function fire()
     {
         return 'FIRE! FIRE!<br>';
+    }
+
+    public function getCatepillar()
+    {
+        return $this->catePillar;
     }
 
 }
