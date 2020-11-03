@@ -9,11 +9,16 @@ class ComposerStaticInit92827a638a58cba348e3e7ca50bdeb4c
     public static $prefixLengthsPsr4 = array (
         'H' => 
         array (
+            'Homework4\\' => 10,
             'Homework2\\' => 10,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Homework4\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/homework4',
+        ),
         'Homework2\\' => 
         array (
             0 => __DIR__ . '/../..' . '/homework2',
@@ -25,6 +30,19 @@ class ComposerStaticInit92827a638a58cba348e3e7ca50bdeb4c
         'Homework2\\Task1\\Moderator' => __DIR__ . '/../..' . '/homework2/Task1/Moderator.php',
         'Homework2\\Task1\\User' => __DIR__ . '/../..' . '/homework2/Task1/User.php',
         'Homework2\\Task1\\Viewer' => __DIR__ . '/../..' . '/homework2/Task1/Viewer.php',
+        'Homework2\\Task2\\Classes\\Bike' => __DIR__ . '/../..' . '/homework2/Task2/Classes/Bike.php',
+        'Homework2\\Task2\\Classes\\Car' => __DIR__ . '/../..' . '/homework2/Task2/Classes/Car.php',
+        'Homework2\\Task2\\Classes\\Tank' => __DIR__ . '/../..' . '/homework2/Task2/Classes/Tank.php',
+        'Homework2\\Task2\\Classes\\Vehicle' => __DIR__ . '/../..' . '/homework2/Task2/Classes/Vehicle.php',
+        'Homework2\\Task2\\Interfaces\\Catepillar' => __DIR__ . '/../..' . '/homework2/Task2/Interfaces/Catepillar.php',
+        'Homework2\\Task2\\Interfaces\\Doors' => __DIR__ . '/../..' . '/homework2/Task2/Interfaces/Doors.php',
+        'Homework2\\Task2\\Interfaces\\Fire' => __DIR__ . '/../..' . '/homework2/Task2/Interfaces/Fire.php',
+        'Homework2\\Task2\\Interfaces\\Motor' => __DIR__ . '/../..' . '/homework2/Task2/Interfaces/Motor.php',
+        'Homework2\\Task2\\Interfaces\\Speed' => __DIR__ . '/../..' . '/homework2/Task2/Interfaces/Speed.php',
+        'Homework2\\Task2\\Interfaces\\Wheels' => __DIR__ . '/../..' . '/homework2/Task2/Interfaces/Wheels.php',
+        'Homework4\\Task4\\Exceptions\\EmptyStringException' => __DIR__ . '/../..' . '/homework4/Task4/Exceptions/EmptyStringException.php',
+        'Homework4\\Task4\\Exceptions\\InvalidInputTypeException' => __DIR__ . '/../..' . '/homework4/Task4/Exceptions/InvalidInputTypeException.php',
+        'Homework4\\Task4\\FormVerification' => __DIR__ . '/../..' . '/homework4/Task4/FormVerification.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

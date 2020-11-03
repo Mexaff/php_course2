@@ -10,7 +10,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Homework2\\": "homework2/"
+      "Homework2\\": "homework2/",
+      "Homework4\\": "homework4/"
     }
   }
 }
